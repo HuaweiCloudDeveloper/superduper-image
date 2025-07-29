@@ -95,12 +95,17 @@ docker run -p 6333:6333 qdrant/qdrant
 ```
 然后就能打开网页 https:ip:6333/dashboard
 
+![img.png](images/img_1.png)
+
 接着运行superduper代码
 ```
 cd /home/superduper
 
 python app.py
 ```
+
+![img.png](images/img_2.png)
+
 主要实现是将一组数据通过模型编码为向量，并添加到qdrant数据库中，然后使用进行查询，输出结果。Qdrant用来存储向量数据，高效邻近搜索。SuperDuperDB 是一个 AI-native 数据抽象层，用于简化 ML 模型与数据库之间的交互。
 
 ### 参考文档
